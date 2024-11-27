@@ -14,14 +14,15 @@ import Layout from "../layouts/Layout.astro";
   <Carousel />
   <main class="max-w-screen-xl mt-10 mx-auto p-4">
     <Presentation />
+    <section>
+      <hr class="my-10" />
+      <h2 class="text-4xl mb-9 font-semibold p-2">
+        Alguno de Nuestros Servicios <span class="text-5xl">👌</span>
+      </h2>
+      <Card_Services />
+      <Carousel_Projects />
+    </section>
     <hr class="my-10" />
-    <div class="flex items-center">
-      <h3 class="text-4xl mb-9 font-semibold">Alguno de Nuestros Servicios</h3>
-      <h3 class="text-5xl mb-9 font-semibold">👌</h3>
-    </div>
-    <Card_Services />
-    <hr class="my-10" />
-    <Carousel_Projects />
     <Card_Projects />
   </main>
   <br /><br /><br />
