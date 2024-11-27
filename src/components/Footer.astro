@@ -1,7 +1,7 @@
 ---
 import Img_Isotipo from "./icons/Img_Isotipo.astro";
 
-const navegacion = [
+const navigation = [
   {
     title: "Servicios",
     url: "/servicios",
@@ -16,7 +16,7 @@ const navegacion = [
   },
 ];
 
-const sociales = [
+const socialNetworks = [
   {
     title: "Facebook",
     url: "https://www.facebook.com/profile.php?id=61561107718264&mibextid=ZbWKwL",
@@ -37,7 +37,7 @@ const sociales = [
   },
 ];
 
-const legales = [
+const legal = [
   {
     title: "Políticas de Privacidad",
     url: "/",
@@ -73,7 +73,7 @@ const legales = [
           </h2>
           <ul class="text-gray-500 font-medium">
             {
-              navegacion.map((link) => (
+              navigation.map((link) => (
                 <li class="mb-4">
                   <a
                     aria-label={link.title}
@@ -93,7 +93,7 @@ const legales = [
           </h2>
           <ul class="text-gray-500 font-medium">
             {
-              sociales.map((social) => (
+              socialNetworks.map((social) => (
                 <li class="mb-4">
                   <a
                     aria-label={social.title}
@@ -108,13 +108,13 @@ const legales = [
             }
           </ul>
         </div>
-        <div>
+        <div class="col-span-2 sm:col-span-1">
           <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
             Legal
           </h2>
           <ul class="text-gray-500 font-medium">
             {
-              legales.map((legal) => (
+              legal.map((legal) => (
                 <li class="mb-4">
                   <a
                     aria-label={legal.title}
@@ -144,7 +144,7 @@ const legales = [
       </span>
       <div class="flex mt-4 sm:justify-center sm:mt-0">
         {
-          sociales.map((social) => (
+          socialNetworks.map((social) => (
             <a
               href={social.url}
               aria-label={social.title}
