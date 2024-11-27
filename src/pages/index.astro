@@ -5,6 +5,7 @@ import Presentation from "../components/Presentation.astro";
 import Carousel_Projects from "../components/Carousel_Projects.astro";
 import Card_Services from "../components/Card_Services.astro";
 import Card_Projects from "../components/Card_Projects.astro";
+import Button_Whatsapp from "../components/Button_Whatsapp.astro";
 import Footer from "../components/Footer.astro";
 ---
 
@@ -26,8 +27,13 @@ import Footer from "../components/Footer.astro";
       <Card_Services />
     </section>
     <hr class="my-10" />
-    <Card_Projects />
+    <section>
+      <h2 class="text-4xl mb-9 font-semibold">
+        Nuestros Proyectos <span class="text-5xl">🛠️</span>
+      </h2>
+      <Card_Projects />
+    </section>
   </main>
-
+  <Button_Whatsapp />
   <Footer />
 </Layout>
