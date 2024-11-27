@@ -1,0 +1,91 @@
+---
+const images = [
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+  {
+    src: "Inicio",
+    alt: "/",
+    title: "/",
+  },
+];
+---
+
+<div class="">
+  <div class="max-w-screen-xl mx-auto py-24">
+    <div
+      class="w-full inline-flex flex-nowrap overflow-hidden
+    sm:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]
+    [mask-image:_linear-gradient(to_right,transparent_0,_black_50px,_black_calc(100%-30px),transparent_100%)]
+    text-gray-100 text-center
+    sm:py-12 py-8 px-6"
+    >
+      <ul
+        class="flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll my-10 md:my-0"
+      >
+        {
+          images.map((image) => (
+            <li class="min-w-[250px] px-4">
+              <img
+                src={image.src}
+                class=""
+                alt={image.alt}
+                title={image.title}
+              />
+            </li>
+          ))
+        }
+      </ul>
+
+      <ul
+        class="flex items-center justify-center md:justify-start sm:[&_li]:mx-8 [&_li]:mx-0 [&_img]:max-w-none animate-infinite-scroll my-10 md:my-0"
+        aria-hidden="true"
+      >
+        {
+          images.map((image) => (
+            <li class="min-w-[250px] px-4">
+              <img
+                src={image.src}
+                class=""
+                alt={image.alt}
+                title={image.title}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>
