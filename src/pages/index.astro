@@ -14,26 +14,48 @@ import Footer from "../components/Footer.astro";
   description="Instalación seguridad electronica, telecomunicaciones y Corrientes débiles para grandes empresas, pequeñas empresas y particulares."
 >
   <Carousel />
+
+  <Button_Whatsapp />
+
   <main class="max-w-screen-xl mt-10 mx-auto p-4">
     <section>
       <Presentation />
       <Carousel_Projects />
     </section>
-    <hr class="my-10" />
-    <section>
-      <h2 class="text-4xl mb-9 font-semibold">
-        Cotiza Nuestros Servicios <span class="text-5xl">👌</span>
+  </main>
+
+  <section class="bg-gradient-to-b from-red-500 to-white">
+    <div class="max-w-screen-xl mx-auto px-4 pt-20">
+      <h2 class="md:text-white text-4xl mb-20 font-bold">
+        COTIZA NUESTROS SERVICIOS <span class="text-5xl">👌</span>
+        <hr class="w-48 h-1 my-4 bg-white border-0 rounded" />
       </h2>
       <Card_Services />
-    </section>
-    <hr class="my-10" />
-    <section>
+    </div>
+  </section>
+  <section class="max-w-screen-xl mx-auto px-4">
+    <p class="pt-14 text-lg text-pretty">
+      Somos <i
+        >especialistas en seguridad electrónica y proyectos de edificación.</i
+      >
+      <b>Diseñamos e instalamos sistemas</b> de alarma contra incendios, cámaras
+      de vigilancia de alta definición y redes de cableado estructurado a medida.
+      Nuestra experiencia y el uso de las últimas tecnologías nos permiten ofrecerte
+      <b>soluciones personalizadas y confiables</b>. ¡Contáctenos hoy mismo y
+      descubre cómo podemos ayudarte a proteger lo que más valoras!
+    </p>
+  </section>
+  <hr class="max-w-screen-xl mx-auto px-4 mt-20" />
+  <section class="max-w-screen-xl mx-auto px-4 pt-20">
+    <div class="">
       <h2 class="text-4xl mb-9 font-semibold">
         Nuestros Proyectos <span class="text-5xl">🛠️</span>
+        <hr class="w-48 h-1 my-4 bg-yellow-300 border-0 rounded" />
       </h2>
       <Card_Projects />
-    </section>
-  </main>
-  <Button_Whatsapp />
+    </div>
+  </section>
+  <hr class="max-w-screen-xl mx-auto px-4" />
+
   <Footer />
 </Layout>
