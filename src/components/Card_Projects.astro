@@ -1,0 +1,235 @@
+---
+const Tags = {
+  weak_currents: {
+    name: "CCDD",
+    class: "bg-black text-white",
+  },
+  electronic_security: {
+    name: "SE",
+    class: "bg-red-500 text-white",
+  },
+  telecommunications: {
+    name: "TELECOM",
+    class: "bg-yellow-300 text-black",
+  },
+};
+
+const Projects = [
+  {
+    title: "Edificio Novo Catedral",
+    description: "Instalación De Telecomunicaciones, corrientes débiles y seguridad electronica para este edificio en construcción. A lo cual se implantaron las mejora y toda las demandas solicitadas como: cámaras de seguridad, cableado y estructurado de telecomunicaciones, entre otros  ",
+    img1: "/1.webp",
+    img1_alt: "",
+    img1_title: "",
+    img2: "/2.webp",
+    img2_alt: "",
+    img2_title: "",
+    img3: "/3.webp",
+    img3_alt: "",
+    img3_title: "",
+    tags: [
+      Tags.weak_currents,
+      Tags.electronic_security,
+      Tags.telecommunications,
+    ],
+  },
+  {
+    title: "TITULO",
+    description: "lorem ipsum dolor sit amet, consect et element     nulla except",
+    img1: "/1.webp",
+    img1_alt: "",
+    img1_title: "",
+    img2: "/2.webp",
+    img2_alt: "",
+    img2_title: "",
+    img3: "/3.webp",
+    img3_alt: "",
+    img3_title: "",
+    tags: [
+      Tags.weak_currents,
+      Tags.electronic_security,
+      Tags.telecommunications,
+    ],
+  },
+  {
+    title: "TITULO",
+    description: "TITULO",
+    img1: "/1.webp",
+    img1_alt: "",
+    img1_title: "",
+    img2: "/2.webp",
+    img2_alt: "",
+    img2_title: "",
+    img3: "/3.webp",
+    img3_alt: "",
+    img3_title: "",
+    tags: [
+      Tags.weak_currents,
+      Tags.electronic_security,
+      Tags.telecommunications,
+    ],
+  },
+  {
+    title: "TITULO",
+    description: "TITULO",
+    img1: "/1.webp",
+    img1_alt: "",
+    img1_title: "",
+    img2: "/2.webp",
+    img2_alt: "",
+    img2_title: "",
+    img3: "/3.webp",
+    img3_alt: "",
+    img3_title: "",
+    tags: [
+      Tags.weak_currents,
+      Tags.electronic_security,
+      Tags.telecommunications,
+    ],
+  },
+];
+---
+
+<div class="flex flex-col gap-y-16">
+    {Projects.map(({title, description, img1, img1_alt, img1_title, img2, img2_alt, img2_title, img3, img3_alt, img3_title, tags}) => (
+            <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+                <div class="w-full md:w-1/2">
+                    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl">
+                        <div
+                        id="carousel"
+                        class="relative w-full"
+                        data-carousel="static"
+                        >
+                            <!-- Carousel wrapper -->
+                            <div class="relative overflow-hidden rounded-lg w-full h-56 z-10 sm:h-80">
+                                <!-- Item 1 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img
+                                        src={img1}
+                                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                                        alt={img1_alt}
+                                        title={img1_title}
+                                    />
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img
+                                        src={img2}
+                                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                                        alt={img2_alt}
+                                        title={img2_title}
+                                    />
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                                    <img
+                                        src={img3}
+                                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+                                        alt={img3_alt}
+                                        title={img3_title}
+                                    />
+                                </div>
+                            </div>
+                            <!-- Slider indicators -->
+                            <div
+                                class="absolute z-10 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+                            >
+                                <button
+                                type="button"
+                                class="w-3 h-3 rounded-full"
+                                aria-current="true"
+                                aria-label="Slide 1"
+                                data-carousel-slide-to="0"></button>
+                                <button
+                                type="button"
+                                class="w-3 h-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 2"
+                                data-carousel-slide-to="1"></button>
+                                <button
+                                type="button"
+                                class="w-3 h-3 rounded-full"
+                                aria-current="false"
+                                aria-label="Slide 3"
+                                data-carousel-slide-to="2"></button>
+                            </div>
+                            <!-- Slider controls -->
+                            <button
+                                type="button"
+                                class="absolute top-0 start-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-prev
+                            >
+                                <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+                                >
+                                    <svg
+                                        class="w-4 h-4 text-white rtl:rotate-180"
+                                        aria-hidden="true"
+                                        fill="none"
+                                        viewBox="0 0 6 10"
+                                    >
+                                        <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 1 1 5l4 4"></path>
+                                    </svg>
+                                    <span class="sr-only">Anterior</span>
+                                </span>
+                            </button>
+                            <button
+                                type="button"
+                                class="absolute top-0 end-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                                data-carousel-next
+                            >
+                                <span
+                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
+                                >
+                                    <svg
+                                        class="w-4 h-4 text-white rtl:rotate-180"
+                                        aria-hidden="true"
+                                        fill="none"
+                                        viewBox="0 0 6 10"
+                                    >
+                                        <path
+                                        stroke="currentColor"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="m1 9 4-4-4-4"></path>
+                                    </svg>
+                                    <span class="sr-only">Siguiente</span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full md:w-1/2 md:max-w-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">
+                    {title}
+                    </h3>
+                    <div class="flex flex-wrap mt-2">
+                        <ul class="flex flex-row mb-2 gap-x-2 items-center">
+                            {tags.map((tag) => (
+                            <li>
+                                <span
+                                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                                >
+                                {tag.name}
+                                </span>
+                            </li>
+                            ))}
+                        </ul>
+
+                        <div class="mt-2 text-gray-900 dark:text-gray-200 sm:text-lg text-md">
+                            {description}
+                        </div>
+                    </div>
+                </div>
+            </article>
+        )
+        )
+    }
+</div>
