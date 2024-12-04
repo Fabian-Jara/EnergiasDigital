@@ -1,235 +1,227 @@
 ---
 const Tags = {
   weak_currents: {
-    name: "CCDD",
+    name: "Corrientes Débiles",
     class: "bg-black text-white",
   },
   electronic_security: {
-    name: "SE",
+    name: "Seguridad Electrónica",
     class: "bg-red-500 text-white",
   },
   telecommunications: {
-    name: "TELECOM",
+    name: "Telecomunicaciones",
     class: "bg-yellow-300 text-black",
   },
 };
 
+const Facilities = {
+  Central_CCTV: "Central CCTV",
+  Central_Incendio: "Central de Incendio",
+  Central_Alarmas: "Central de Alarmas Anti Robo",
+  Control_Acceso: "Control de Acceso",
+  Portones_Automáticos: "Portones Automáticos",
+  Central_Citófono: "Central de Citófono Conserjería",
+  Rit_Alambrica: "Rit Alámbrica",
+  Rit_Inalambrica: "Rit Inalámbrica",
+  Rit_Fibra_optica: "Rit Fibra Óptica",
+};
+
 const Projects = [
   {
+    title: "Edificio Novo Yungay",
+    description:
+      "Instalación De Corrientes débiles y seguridad electrónica  para este edificio en construcción. A lo cual se implantaron las mejora y toda las demandas solicitadas como: cámaras de seguridad, cableado y estructurado de corrientes débiles y seguridad electrónica, entre otros  ",
+    img1: "/camara-de-seguridad-y-sensor-de-humo.webp",
+    img1_alt:
+      "Sistema de seguridad doméstica con cámara y detector de humo, ofreciendo protección completa para tu hogar.",
+    img1_title: "Cámara de seguridad y detector de humo",
+    img2: "/central-citofono-de-conserjeria.webp",
+    img2_alt:
+      "Sistema de intercomunicación inteligente para edificios residenciales y comerciales",
+    img2_title: "Central de Citófono de conserjería",
+    img3: "/citofono-de-departamento-y-alarma-de-3-zonas.webp",
+    img3_alt:
+      "Citófono de departamento con alarma de 3 zonas para mayor seguridad. Ideal para aumentar la protección de tu hogar.",
+    img3_title: "Citófono de departamento y alarma de 3 zonas",
+    img4: "/control-de-acceso-con-lector-de-chip.webp",
+    img4_alt:
+      "Sistema de control de acceso con lector de chip para puertas de edificios. Solución segura y eficiente para controlar el acceso a tu propiedad.",
+    img4_title: "Sistema de control de acceso con lector de chip",
+    img5: "/monitores-con-camaras-de-seguridad.webp",
+    img5_alt:
+      "Monitores de alta resolución para sistemas de seguridad, ideales para visualizar imágenes de cámaras de vigilancia en tiempo real.",
+    img5_title: "Monitores profesionales para sistemas de seguridad",
+    img6: "/palanca-de-accion-manual-anti-incendio.webp",
+    img6_alt:
+      "Palanca de accionamiento manual para sistemas de extinción de incendios. Fácil de usar y diseñada para activar el sistema en caso de emergencia.",
+    img6_title: "Palanca de accionamiento para sistemas contra incendios",
+    tags: [Tags.weak_currents, Tags.electronic_security],
+    facilities: [
+      Facilities.Central_CCTV,
+      Facilities.Central_Incendio,
+      Facilities.Central_Alarmas,
+      Facilities.Control_Acceso,
+      Facilities.Portones_Automáticos,
+      Facilities.Central_Citófono,
+    ],
+  },
+  {
     title: "Edificio Novo Catedral",
-    description: "Instalación De Telecomunicaciones, corrientes débiles y seguridad electronica para este edificio en construcción. A lo cual se implantaron las mejora y toda las demandas solicitadas como: cámaras de seguridad, cableado y estructurado de telecomunicaciones, entre otros  ",
-    img1: "/1.webp",
-    img1_alt: "",
-    img1_title: "",
-    img2: "/2.webp",
-    img2_alt: "",
-    img2_title: "",
-    img3: "/3.webp",
-    img3_alt: "",
-    img3_title: "",
+    description:
+      "Este edificios se construyen bajo los más altos estándares de calidad, incluyendo una completa instalación de telecomunicaciones. Cámaras de seguridad, cableado estructurado y sistemas de control, todo diseñado para ofrecerte la mejor experiencia.",
+    img1: "/fucion-de-fibra-optica-en-mufa.webp",
+    img1_alt:
+      "Fusión de fibra óptica en una mufa. Proceso de unión de fibras ópticas para crear una conexión de alta calidad.",
+    img1_title: "Fusión de fibra óptica en mufa",
+    img2: "/camra-de-seguridad-hikivision.webp",
+    img2_alt:
+      "Cámara de seguridad Hikvision de alta resolución, ideal para vigilancia y monitoreo 24/7.",
+    img2_title: "Cámara de seguridad Hikvision",
+    img3: "/fibra-optica-y-conexion-alambrica-e-inalambrica-de-coaxial.webp",
+    img3_alt:
+      "Comparación de diferentes tipos de conexiones: fibra óptica, cable coaxial, conexión inalámbrica.",
+    img3_title: "Fibra óptica y conexión alámbrica e inalámbrica de coaxial",
+    img4: "/camara-de-seguridad-palanca-sirena-anti-incendio.webp",
+    img4_alt:
+      "Sistema de seguridad con cámara de vigilancia, palanca de accionamiento manual y sirena de alarma contra incendios.",
+    img4_title: "Sistema de seguridad con cámara, palanca y sirena",
     tags: [
       Tags.weak_currents,
       Tags.electronic_security,
       Tags.telecommunications,
     ],
-  },
-  {
-    title: "TITULO",
-    description: "lorem ipsum dolor sit amet, consect et element     nulla except",
-    img1: "/1.webp",
-    img1_alt: "",
-    img1_title: "",
-    img2: "/2.webp",
-    img2_alt: "",
-    img2_title: "",
-    img3: "/3.webp",
-    img3_alt: "",
-    img3_title: "",
-    tags: [
-      Tags.weak_currents,
-      Tags.electronic_security,
-      Tags.telecommunications,
-    ],
-  },
-  {
-    title: "TITULO",
-    description: "TITULO",
-    img1: "/1.webp",
-    img1_alt: "",
-    img1_title: "",
-    img2: "/2.webp",
-    img2_alt: "",
-    img2_title: "",
-    img3: "/3.webp",
-    img3_alt: "",
-    img3_title: "",
-    tags: [
-      Tags.weak_currents,
-      Tags.electronic_security,
-      Tags.telecommunications,
-    ],
-  },
-  {
-    title: "TITULO",
-    description: "TITULO",
-    img1: "/1.webp",
-    img1_alt: "",
-    img1_title: "",
-    img2: "/2.webp",
-    img2_alt: "",
-    img2_title: "",
-    img3: "/3.webp",
-    img3_alt: "",
-    img3_title: "",
-    tags: [
-      Tags.weak_currents,
-      Tags.electronic_security,
-      Tags.telecommunications,
+    facilities: [
+      Facilities.Central_Alarmas,
+      Facilities.Central_Citófono,
+      Facilities.Central_CCTV,
+      Facilities.Central_Incendio,
+      Facilities.Control_Acceso,
+      Facilities.Portones_Automáticos,
+      Facilities.Rit_Alambrica,
+      Facilities.Rit_Fibra_optica,
+      Facilities.Rit_Inalambrica,
     ],
   },
 ];
 ---
 
 <div class="flex flex-col gap-y-16">
-    {Projects.map(({title, description, img1, img1_alt, img1_title, img2, img2_alt, img2_title, img3, img3_alt, img3_title, tags}) => (
-            <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-                <div class="w-full md:w-1/2">
-                    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl">
-                        <div
-                        id="carousel"
-                        class="relative w-full"
-                        data-carousel="static"
-                        >
-                            <!-- Carousel wrapper -->
-                            <div class="relative overflow-hidden rounded-lg w-full h-56 z-10 sm:h-80">
-                                <!-- Item 1 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img
-                                        src={img1}
-                                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                                        alt={img1_alt}
-                                        title={img1_title}
-                                    />
-                                </div>
-                                <!-- Item 2 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img
-                                        src={img2}
-                                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                                        alt={img2_alt}
-                                        title={img2_title}
-                                    />
-                                </div>
-                                <!-- Item 3 -->
-                                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                                    <img
-                                        src={img3}
-                                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
-                                        alt={img3_alt}
-                                        title={img3_title}
-                                    />
-                                </div>
-                            </div>
-                            <!-- Slider indicators -->
-                            <div
-                                class="absolute z-10 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-                            >
-                                <button
-                                type="button"
-                                class="w-3 h-3 rounded-full"
-                                aria-current="true"
-                                aria-label="Slide 1"
-                                data-carousel-slide-to="0"></button>
-                                <button
-                                type="button"
-                                class="w-3 h-3 rounded-full"
-                                aria-current="false"
-                                aria-label="Slide 2"
-                                data-carousel-slide-to="1"></button>
-                                <button
-                                type="button"
-                                class="w-3 h-3 rounded-full"
-                                aria-current="false"
-                                aria-label="Slide 3"
-                                data-carousel-slide-to="2"></button>
-                            </div>
-                            <!-- Slider controls -->
-                            <button
-                                type="button"
-                                class="absolute top-0 start-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                                data-carousel-prev
-                            >
-                                <span
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
-                                >
-                                    <svg
-                                        class="w-4 h-4 text-white rtl:rotate-180"
-                                        aria-hidden="true"
-                                        fill="none"
-                                        viewBox="0 0 6 10"
-                                    >
-                                        <path
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="M5 1 1 5l4 4"></path>
-                                    </svg>
-                                    <span class="sr-only">Anterior</span>
-                                </span>
-                            </button>
-                            <button
-                                type="button"
-                                class="absolute top-0 end-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                                data-carousel-next
-                            >
-                                <span
-                                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none"
-                                >
-                                    <svg
-                                        class="w-4 h-4 text-white rtl:rotate-180"
-                                        aria-hidden="true"
-                                        fill="none"
-                                        viewBox="0 0 6 10"
-                                    >
-                                        <path
-                                        stroke="currentColor"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="2"
-                                        d="m1 9 4-4-4-4"></path>
-                                    </svg>
-                                    <span class="sr-only">Siguiente</span>
-                                </span>
-                            </button>
-                        </div>
+  {
+    Projects.map((project) => {
+      const images = Object.keys(project).filter(
+        (key) =>
+          key.startsWith("img") &&
+          !key.includes("alt") &&
+          !key.includes("title")
+      );
+      return (
+        <article class="flex flex-col space-x-0 space-y-8 group lg:flex-row lg:space-x-8 lg:space-y-0 md:mx-auto lg:mx-0">
+          <div class="w-full md:w-[500px] lg:w-1/2">
+            <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl lg:group-hover:-translate-y-1 lg:group-hover:shadow-2xl">
+              <div id="carousel" class="relative w-full" data-carousel="static">
+                {/* Carousel wrapper */}
+                <div class="relative overflow-hidden rounded-lg w-full h-56 z-10 sm:h-80">
+                  {images.map((imgKey, index) => (
+                    <div
+                      class={index === 0 ? "hidden" : "hidden"}
+                      duration-700
+                      ease-in-out
+                      data-carousel-item
+                    >
+                      <img
+                        src={project[imgKey]}
+                        class="object-cover object-top w-full h-56 transition duration-500 sm:h-full"
+                        alt={project[`${imgKey}_alt`] || ""}
+                        title={project[`${imgKey}_title`] || ""}
+                      />
                     </div>
+                  ))}
                 </div>
 
-                <div class="w-full md:w-1/2 md:max-w-lg">
-                    <h3 class="text-2xl font-bold text-gray-900 dark:text-gray-100">
-                    {title}
+                {/* Slider controls */}
+                <button
+                  type="button"
+                  class="absolute top-0 start-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev
+                >
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg
+                      class="w-4 h-4 text-white rtl:rotate-180"
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 1 1 5l4 4"
+                      />
+                    </svg>
+                    <span class="sr-only">Anterior</span>
+                  </span>
+                </button>
+                <button
+                  type="button"
+                  class="absolute top-0 end-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next
+                >
+                  <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg
+                      class="w-4 h-4 text-white rtl:rotate-180"
+                      aria-hidden="true"
+                      fill="none"
+                      viewBox="0 0 6 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m1 9 4-4-4-4"
+                      />
+                    </svg>
+                    <span class="sr-only">Siguiente</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full md:w-[500px] lg:w-1/2 lg:max-w-2xl">
+            <h3 class="text-2xl font-bold">{project.title}</h3>
+            <div class="flex flex-wrap mt-2">
+              <ul class="mb-2 gap-x-2 items-center columns-2 space-y-1 gap-10 lg:columns-3">
+                {project.tags.map((tag) => (
+                  <li>
+                    <span
+                      class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+                    >
+                      {tag.name}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              <div class="mt-2">{project.description}</div>
+              <div class="mt-4">
+                {project.facilities.length > 0 && (
+                  <>
+                    <h3 class="font-semibold underline text-xs">
+                      Sistemas Implementados
                     </h3>
-                    <div class="flex flex-wrap mt-2">
-                        <ul class="flex flex-row mb-2 gap-x-2 items-center">
-                            {tags.map((tag) => (
-                            <li>
-                                <span
-                                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-                                >
-                                {tag.name}
-                                </span>
-                            </li>
-                            ))}
-                        </ul>
-
-                        <div class="mt-2 text-gray-900 dark:text-gray-200 sm:text-lg text-md">
-                            {description}
-                        </div>
-                    </div>
-                </div>
-            </article>
-        )
-        )
-    }
+                    <ul class="list-disc px-7 text-xs sm:columns-2 sm:space-y-1 sm:gap-10 pt-3">
+                      {project.facilities.map((facility) => (
+                        <li>{facility}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    })
+  }
 </div>
