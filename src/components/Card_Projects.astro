@@ -15,15 +15,22 @@ const Tags = {
 };
 
 const Facilities = {
-  Central_CCTV: "Central CCTV",
-  Central_Incendio: "Central de Incendio",
-  Central_Alarmas: "Central de Alarmas Anti Robo",
-  Control_Acceso: "Control de Acceso",
-  Portones_Automáticos: "Portones Automáticos",
-  Central_Citófono: "Central de Citófono Conserjería",
-  Rit_Alambrica: "Rit Alámbrica",
-  Rit_Inalambrica: "Rit Inalámbrica",
-  Rit_Fibra_optica: "Rit Fibra Óptica",
+  cctv_center: "Central CCTV",
+  fire_station: "Central de Incendio",
+  alarm_center: "Central de Alarmas Anti Robo",
+  access_control: "Control de Acceso",
+  automatic_gate: "Portones Automáticos",
+  intercom_center: "Central de Citófono Conserjería",
+  itn_wired: "Rit Alámbrica",
+  itn_wireless: "Rit Inalámbrica",
+  itn_optical_fiber: "Rit Fibra Óptica",
+};
+
+const Services = {
+  linear_ray: "Activación rayos lineales perimetrales",
+  fire_fighting_system: "Cambio de sistema anti incendio",
+  cctv: "Restablecimiento de seguridad CCTV",
+  gate_restoration: "Restauración completa de portón",
 };
 
 const Projects = [
@@ -57,13 +64,14 @@ const Projects = [
     img6_title: "Palanca de accionamiento para sistemas contra incendios",
     tags: [Tags.weak_currents, Tags.electronic_security],
     facilities: [
-      Facilities.Central_CCTV,
-      Facilities.Central_Incendio,
-      Facilities.Central_Alarmas,
-      Facilities.Control_Acceso,
-      Facilities.Portones_Automáticos,
-      Facilities.Central_Citófono,
+      Facilities.cctv_center,
+      Facilities.fire_station,
+      Facilities.alarm_center,
+      Facilities.access_control,
+      Facilities.automatic_gate,
+      Facilities.intercom_center,
     ],
+    services: [],
   },
   {
     title: "Edificio Novo Catedral",
@@ -91,16 +99,89 @@ const Projects = [
       Tags.telecommunications,
     ],
     facilities: [
-      Facilities.Central_Alarmas,
-      Facilities.Central_Citófono,
-      Facilities.Central_CCTV,
-      Facilities.Central_Incendio,
-      Facilities.Control_Acceso,
-      Facilities.Portones_Automáticos,
-      Facilities.Rit_Alambrica,
-      Facilities.Rit_Fibra_optica,
-      Facilities.Rit_Inalambrica,
+      Facilities.alarm_center,
+      Facilities.intercom_center,
+      Facilities.cctv_center,
+      Facilities.fire_station,
+      Facilities.access_control,
+      Facilities.automatic_gate,
+      Facilities.itn_wired,
+      Facilities.itn_wireless,
+      Facilities.itn_optical_fiber,
     ],
+    services: [],
+  },
+  {
+    title: "Bodega Montserrat",
+    description:
+      "Manutención a sistema de seguridad para bodegas de Montserrat el cual incluye puesta en marcha de aparatos nuevos y viejos, cambio completo del sistema de incendio a uno certificado por las nuevas normas chilenas, restablecimiento del sistema perimetral y cámaras de seguridad",
+    img1: "/camara-de-seguridad-ptz.webp",
+    img1_alt:
+      "Cámara de seguridad PTZ para monitoreo de alta definición con rotación panorámica y zoom óptico",
+    img1_title: "Cámara de seguridad PTZ",
+    img2: "/central-de-incendio-smartline-inim.webp",
+    img2_alt:
+      "Central de incendio SmartLine Inim con tecnología avanzada para detección y gestión de alarmas contra incendios",
+    img2_title: "Central de incendio SmartLine Inim",
+    img3: "/central-de-incendio-smartline-inim-abirta.webp",
+    img3_alt:
+      "Central de incendio SmartLine Inim abierta, diseño interno para sistemas avanzados de detección y control de incendios",
+    img3_title: "Central de incendio SmartLine Inim abierta",
+    img4: "/placa-de-central-de-alarmas.webp",
+    img4_alt:
+      "Placa de central de alarmas con circuitos integrados para sistemas de seguridad y detección",
+    img4_title: "Placa de central de alarmas",
+    img5: "/sensor-de-humo.webp",
+    img5_alt:
+      "Sensor de humo para detección temprana de incendios en sistemas de seguridad",
+    img5_title: "Sensor de humo",
+    img6: "/sensor-de-rayo-lineal-perimetral.webp",
+    img6_alt:
+      "Sensor de rayo lineal perimetral para protección y detección avanzada en seguridad exterior",
+    img6_title: "Sensor rayo lineal perimetral",
+    img7: "/teclado-de-central-de-alarmas.webp",
+    img7_alt:
+      "Teclado para central de alarmas con diseño funcional para control y configuración de sistemas de seguridad",
+    img7_title: "Teclado de central de alarma",
+    tags: [Tags.electronic_security],
+    facilities: [],
+    services: [
+      Services.cctv,
+      Services.fire_fighting_system,
+      Services.linear_ray,
+    ],
+  },
+  {
+    title: "Edificio Holanda",
+    description:
+      "Se realizó la restauración completa de un portón dañado por impacto en un edificio, que incluyó la remoción y reemplazo de secciones de fierro doblado con nuevas piezas soldadas para garantizar la estabilidad estructural. Además, se instaló un nuevo motor de corredera junto con una estructura de soporte para asegurar su correcto funcionamiento. Finalmente, se aplicó pintura en todo el portón para protegerlo.",
+    img1: "/porton-chocado-lateral.webp",
+    img1_alt:
+      "Portón lateral dañado por choque, ideal para reparaciones y reemplazos en accesos industriales o residenciales",
+    img1_title: "Portón chocado lateral",
+    img2: "/porton-sin-motor.webp",
+    img2_alt:
+      "Portón sin motor para instalación manual en entradas residenciales e industriales",
+    img2_title: "Portón sin motor",
+    img3: "/correccion-de-fierro-doblado.webp",
+    img3_alt:
+      "Corrección de fierro doblado para reparaciones estructurales y reforzamiento de metales en construcción",
+    img3_title: "Corrección de Fierro doblado",
+    img4: "/instalacion-final-de-porton.webp",
+    img4_alt:
+      "Instalación final de portón en acceso residencial o comercial, con ajustes y aseguramiento de funcionalidad",
+    img4_title: "Instalación final de portón",
+    img5: "/alineacion-de-porton-chocado.webp",
+    img5_alt:
+      "Alineación de portón chocado para reparación y ajuste en accesos residenciales o industriales",
+    img5_title: "Alineación ded portón chocado",
+    img6: "/motor-centurion-para-porton-corredero.webp",
+    img6_alt:
+      "Motor Centurion para portón corredero, sistema de automatización para apertura eficiente y segura de accesos",
+    img6_title: "Motor Centurion para portón corredero",
+    tags: [Tags.weak_currents],
+    facilities: [],
+    services: [Services.gate_restoration],
   },
 ];
 ---
@@ -208,11 +289,23 @@ const Projects = [
                 {project.facilities.length > 0 && (
                   <>
                     <h3 class="font-semibold underline text-xs">
-                      Sistemas Implementados
+                      Sistema Implementado
                     </h3>
                     <ul class="list-disc px-7 text-xs sm:columns-2 sm:space-y-1 sm:gap-10 pt-3">
                       {project.facilities.map((facility) => (
                         <li>{facility}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {project.services.length > 0 && (
+                  <>
+                    <h3 class="font-semibold underline text-xs">
+                      Mantenimiento Implementado
+                    </h3>
+                    <ul class="list-disc px-7 text-xs sm:columns-2 sm:space-y-1 sm:gap-10 pt-3">
+                      {project.services.map((service) => (
+                        <li>{service}</li>
                       ))}
                     </ul>
                   </>
