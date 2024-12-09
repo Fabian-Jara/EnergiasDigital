@@ -2,6 +2,8 @@
 // Supports weights 100-900
 import "@fontsource-variable/montserrat";
 import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import Button_Whatsapp from "../components/Button_Whatsapp.astro";
 
 interface Props {
   title: string;
@@ -28,7 +30,11 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <Navbar />
+    <Button_Whatsapp />
     <slot />
+
+    <hr class="max-w-screen-xl mx-auto px-4" />
+    <Footer />
   </body>
 </html>
 <style is:global>
