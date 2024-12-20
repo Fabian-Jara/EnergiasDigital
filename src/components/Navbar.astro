@@ -8,16 +8,12 @@ const pages = [
     url: "/",
   },
   {
-    title: "Nosotros",
-    url: "/about_us",
-  },
-  {
     title: "Servicios",
     url: "/services",
   },
   {
-    title: "Proyectos",
-    url: "/projects",
+    title: "Nosotros",
+    url: "/about_us",
   },
 ];
 
@@ -73,3 +69,30 @@ const pathname = new URL(Astro.request.url).pathname;
     </div>
   </div>
 </nav>
+
+<script>
+  function handleSmoothScroll(event) {
+    const targetId = event.target.getAttribute("href");
+    if (targetId.startsWith("#")) {
+      event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const offset = 25; // Margen superior
+        const elementPosition = targetElement.offsetTop;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll('a[href^="#"]');
+    navLinks.forEach((link) =>
+      link.addEventListener("click", handleSmoothScroll)
+    );
+  });
+</script>
