@@ -45,20 +45,24 @@ import Brands from "../components/Brands.astro";
       descubre cómo podemos ayudarte a proteger lo que más valoras!
     </p>
   </section>
-  <hr class="max-w-screen-xl mx-auto px-4 mt-20" />
-  <section class="max-w-screen-xl mx-auto px-4 py-20">
-    <div class="">
-      <div class="pb-10">
-        <h1 class="md:text-center md:text-4xl text-3xl font-bold">
-          Últimos Proyectos
-        </h1>
-        <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto" />
+  <div class="bg-gray-50">
+    <hr class="max-w-screen-xl mx-auto px-4 mt-20" />
+    <section class="max-w-screen-xl mx-auto px-4 py-20" id="projects">
+      <div class="">
+        <div class="pb-10">
+          <h1 class="md:text-center md:text-4xl text-3xl font-bold">
+            Últimos Proyectos
+          </h1>
+          <hr
+            class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto"
+          />
+        </div>
+        <Card_Projects />
       </div>
-      <Card_Projects />
-    </div>
-  </section>
+    </section>
+  </div>
   <hr class="max-w-screen-xl mx-auto px-4" />
-  <section class="max-w-screen-xl mx-auto px-4 py-20">
+  <section class="max-w-screen-xl mx-auto px-4 py-20" id="about_us">
     <div class="">
       <Value_Proposition />
     </div>
@@ -66,15 +70,21 @@ import Brands from "../components/Brands.astro";
 
   <hr class="max-w-screen-xl mx-auto px-4" />
 
-  <section class="max-w-screen-xl mx-auto px-4 pt-20">
-    <div class="">
-      <div>
-        <h1 class="md:text-center md:text-4xl text-3xl text-gray-950 font-bold">
-          Marcas con las que trabajamos
-        </h1>
-        <hr class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto" />
+  <div class="bg-gray-50">
+    <section class="max-w-screen-xl mx-auto px-4 pt-20">
+      <div class="">
+        <div>
+          <h1
+            class="md:text-center md:text-4xl text-3xl text-gray-950 font-bold"
+          >
+            Marcas con las que trabajamos
+          </h1>
+          <hr
+            class="h-1 bg-yellow-300 border-none rounded-2xl w-60 md:mx-auto"
+          />
+        </div>
+        <Brands />
       </div>
-      <Brands />
-    </div>
-  </section>
+    </section>
+  </div>
 </Layout>
